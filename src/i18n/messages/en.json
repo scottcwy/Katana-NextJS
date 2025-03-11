@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "title": "Create Beautiful AI Images | Flux AI Image Generator",
+    "description": "Transform your ideas into stunning visuals using our advanced AI technology. Perfect for any creative project with unprecedented quality and limitless creativity.",
+    "keywords": "Flux AI 2.0, AI Art, Image Generator, High-Quality Images, Fast Generation"
+  },
+  "hero": {
+    "title": "Flux AI Image Generator",
+    "description": "Transform your ideas into stunning visuals using our advanced AI technology. Perfect for any creative project.",
+    "description2": "Unprecedented quality, incredible details, and limitless creativity.",
+    "description3": "From dreamy landscapes to abstract masterpieces - if you can imagine it, Flux can create it.",
+    "create": "Create",
+    "highlight_text": "Beautiful AI Images",
+    "powered_by": "Powered by the latest Flux technology with enhanced image quality",
+    "scroll_to_explore": "",
+    "announcement": {
+      "label": "Just Released",
+      "title": "Flux Model 2.0 - Now 10x Faster"
+    },
+    "buttons": {
+      "create": "Experience Flux AI",
+      "gallery": "View Image Gallery"
+    }
+  },
+  "user": {
+    "sign_in": "Sign In",
+    "sign_out": "Sign Out",
+    "credits": "Credits",
+    "api_keys": "API Keys",
+    "my_orders": "My Orders"
+  },
+  "generator": {
+    "title": "Flux Generator",
+    "subtitle": "Beautiful AI Images",
+    "description": "Create beautiful AI-generated wallpapers with simple text prompts",
+    "extra_description": "Unprecedented quality, incredible details, and limitless creativity.",
+    "input": {
+      "placeholder": "Describe your dream image, e.g.: A cyberpunk cityscape at night with neon lights reflecting in rain puddles...",
+      "label": "Describe your dream image",
+      "clear": "Clear",
+      "clear_tooltip": "Clear input",
+      "characters": "characters"
+    },
+    "prompts": {
+      "suggestions": "Try these inspiring examples:",
+      "sample1": "A futuristic cityscape with flying cars and neon lights",
+      "sample2": "Mountain landscape at sunset with reflective lake",
+      "sample3": "Abstract digital art with geometric shapes in vibrant colors"
+    },
+    "showcase": {
+      "title": "Showcase",
+      "description": "Explore what's possible with our AI",
+      "examples": {
+        "cityscape": "Cityscape",
+        "mountain": "Mountain landscape",
+        "abstract": "Abstract art"
+      }
+    },
+    "placeholder": "Describe the image you want to generate...",
+    "generate": "Generate Image",
+    "generating": "Generating your image...",
+    "error": {
+      "generating": "Error generating image. Please try again."
+    },
+    "generatedImages": "Generated Images",
+    "button": {
+      "generate": "Generate",
+      "loading": "Generating...",
+      "download": "Download"
+    },
+    "result": {
+      "title": "Generated Image",
+      "download_filename": "ai-wallpaper"
+    },
+    "gallery": {
+      "title": "Generated Images",
+      "button": {
+        "download": "Download",
+        "delete": "Delete"
+      },
+      "prompt": {
+        "label": "Prompt"
+      },
+      "created": {
+        "at": "Created at"
+      },
+      "empty": {
+        "title": "Your Gallery Awaits",
+        "description": "Create your first AI-generated masterpiece. Describe your vision above, and let our AI bring it to life."
+      },
+      "clear_all": "Clear all images",
+      "download_prefix": "flux-ai-",
+      "download_default": "flux-ai-image"
+    }
+  },
+  "api": {
+    "errors": {
+      "generic": "An error occurred. Please try again.",
+      "image_generation": "Error generating image",
+      "no_prompt": "Please provide a prompt",
+      "insufficient_credits": "Insufficient credits",
+      "invalid_size": "Invalid image size",
+      "invalid_params": "Invalid parameters",
+      "invalid_interval": "Invalid subscription interval",
+      "invalid_valid_months": "Invalid validity period",
+      "no_auth": "Authentication required. Please sign in.",
+      "checkout_failed": "Checkout process failed"
+    }
+  },
+  "error": {
+    "generating": "Error generating image. Please try again."
+  },
+  "sign_modal": {
+    "sign_in_title": "Sign In",
+    "sign_in_description": "Sign in to your account",
+    "sign_up_title": "Sign Up",
+    "sign_up_description": "Create a new account",
+    "email_title": "Email",
+    "email_placeholder": "Enter your email",
+    "password_title": "Password",
+    "password_placeholder": "Enter your password",
+    "forgot_password": "Forgot password?",
+    "or": "Or",
+    "continue": "Continue",
+    "no_account": "Don't have an account?",
+    "email_sign_in": "Sign in with Email",
+    "google_sign_in": "Sign in with Google",
+    "github_sign_in": "Sign in with GitHub",
+    "close_title": "Close",
+    "cancel_title": "Cancel",
+    "terms_notice": "By clicking continue, you agree to our",
+    "terms_of_service": "Terms of Service",
+    "and": "and",
+    "privacy_policy": "Privacy Policy",
+    "continue_with": "Or continue with"
+  },
+  "my_orders": {
+    "title": "My Orders",
+    "description": "Orders purchased on Flux Image Generator.",
+    "no_orders": "No orders found",
+    "tip": "",
+    "activate_order": "Activate Order",
+    "actived": "Activated",
+    "join_discord": "Join Discord",
+    "read_docs": "Read Docs",
+    "table": {
+      "order_no": "Order No",
+      "email": "Email",
+      "product_name": "Product Name",
+      "amount": "Amount",
+      "paid_at": "Paid At",
+      "github_username": "GitHub Username",
+      "status": "Status"
+    }
+  },
+  "my_credits": {
+    "title": "My Credits",
+    "left_tip": "Credits Left: {left_credits}",
+    "no_credits": "No credits record",
+    "recharge": "Recharge",
+    "table": {
+      "trans_no": "Transaction No",
+      "trans_type": "Transaction Type",
+      "credits": "Credits",
+      "updated_at": "Updated At",
+      "status": "Status"
+    }
+  },
+  "api_keys": {
+    "title": "API Keys",
+    "tip": "Please keep your API keys safe and avoid leaking them",
+    "no_api_keys": "No API keys",
+    "create_api_key": "Create API Key",
+    "table": {
+      "name": "Name",
+      "key": "Key",
+      "created_at": "Created At"
+    },
+    "form": {
+      "name": "Name",
+      "name_placeholder": "API Key Name",
+      "submit": "Submit"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "News, resources and updates about Flux Image Generator",
+    "read_more_text": "Read More"
+  },
+  "footer": {
+    "powered_by": "build with Katana-NextJS",
+    "listed_on": "Listed on Dir2AI",
+    "listed_on_title": "Dir2AI - Best AI Websites and Tools",
+    "current_year": "{{year}}",
+    "copyright": " Flux AI Image Generator. All rights reserved.",
+    "description": "AI image is a NextJS project for generating beautiful wallpapers"
+  }
+}

@@ -1,0 +1,464 @@
+{
+  "template": "katana-nextjs-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "AI图像",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI图像生成器"
+      },
+      "url": "/zh"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "博客",
+          "url": "/posts",
+          "icon": "MdArticle"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "使用 Flux AI 创造惊艳艺术",
+    "highlight_text": "惊艳艺术",
+    "description": "体验由革命性 Flux 模型驱动的下一代 AI 艺术创作技术。<br/>无与伦比的质量，令人难以置信的细节，无限创意可能。<br/>从梦幻风景到抽象杰作 - 只要你能想到，Flux 就能创造。",
+    "announcement": {
+      "label": "全新发布",
+      "title": "✨ ✨ Flux 模型 2.0 - 速度提升10倍",
+      "url": "/#gallery"
+    },
+    "tip": "🚀 采用最新 Flux 技术，带来更高画质体验",
+    "buttons": [
+      {
+        "title": "体验 Flux AI",
+        "icon": "RiMagicFill",
+        "url": "#try-it-now",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "艺术展廊",
+        "icon": "RiGalleryFill",
+        "url": "#generated-images",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": true
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "AI驱动的图像创作平台",
+    "label": "功能特点",
+    "description": "使用先进的AI技术，为任何设备创建独特、高质量的图像。",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "items": [
+      {
+        "title": "秒级生成",
+        "description": "使用我们的AI技术，几秒钟内即可生成精美图像",
+        "icon": "RiFlashlightFill"
+      },
+      {
+        "title": "多设备支持",
+        "description": "为桌面、手机和平板生成优化的图像分辨率",
+        "icon": "RiDeviceLine"
+      },
+      {
+        "title": "风格定制",
+        "description": "选择多种艺术风格，或创建专属于您的独特风格",
+        "icon": "RiPaletteLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "为什么选择 AI图像",
+    "label": "优势",
+    "description": "获取启动图像创作所需的一切 - 从即用型模板到技术支持。",
+    "items": [
+      {
+        "title": "完整框架",
+        "description": "基于 Next.js 构建，集成身份验证、支付和 AI 功能 - 一切开箱即用。",
+        "icon": "RiNextjsFill",
+        "image": {
+          "src": "/imgs/features/2.png"
+        }
+      },
+      {
+        "title": "丰富的模板库",
+        "description": "选择各种图像模板来启动您的项目 - 横版、竖版等。",
+        "icon": "RiClapperboardAiLine",
+        "image": {
+          "src": "/imgs/features/3.png"
+        }
+      },
+      {
+        "title": "技术指导",
+        "description": "获得专门支持并加入我们的开发者社区，确保您成功启动。",
+        "icon": "RiCodeFill",
+        "image": {
+          "src": "/imgs/features/4.png"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "如何使用 AI图像 启动项目",
+    "description": "通过三个简单步骤启动您的图像创作项目：",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "获取 AI图像",
+        "description": "一次性付款购买 AI图像。查收邮件获取代码和文档。",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "开始您的项目",
+        "description": "阅读文档并克隆 AI图像 代码。开始构建您的图像创作项目。",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "定制您的项目",
+        "description": "使用您的数据和内容修改模板。满足特定的图像需求。",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "部署到生产环境",
+        "description": "通过几个步骤将项目部署到生产环境，立即开始服务客户。",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "AI图像 核心功能",
+    "description": "快速高效启动图像创作所需的一切。",
+    "items": [
+      {
+        "title": "Next.js 模板",
+        "description": "生产就绪的 Next.js 模板，支持 SEO 友好结构和国际化。",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "身份验证和支付",
+        "description": "集成 Google OAuth、一键登录和 Stripe 支付处理。",
+        "icon": "RiKey2Fill"
+      },
+      {
+        "title": "数据基础设施",
+        "description": "内置 Supabase 集成，提供可靠和可扩展的数据存储。",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "一键部署",
+        "description": "无缝部署到 Vercel 或 Cloudflare，自动化设置。",
+        "icon": "RiCloudy2Fill"
+      },
+      {
+        "title": "业务分析",
+        "description": "集成 Google Analytics 和 Search Console 追踪增长。",
+        "icon": "RiBarChart2Line"
+      },
+      {
+        "title": "AI 图像生成",
+        "description": "预配置 AI 集成，内置图像生成功能。",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "使用 AI图像 构建的图像创作项目",
+    "description": "易于使用，快速发布。",
+    "items": [
+      {
+        "title": "横版图像",
+        "description": "AI 自动生成的横版图像",
+        "url": "",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/1.png"
+        }
+      },
+      {
+        "title": "竖版图像",
+        "description": "AI 自动生成的竖版图像",
+        "url": "",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/2.png"
+        }
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "统计",
+    "title": "用户喜爱 AI图像",
+    "description": "因为它易于使用且快速发布。",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "信任",
+        "label": "99+",
+        "description": "客户"
+      },
+      {
+        "title": "内置",
+        "label": "20+",
+        "description": "组件"
+      },
+      {
+        "title": "快速发布",
+        "label": "5",
+        "description": "分钟"
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "用户评价",
+    "title": "用户如何评价 AI图像",
+    "description": "听听使用 AI图像 启动图像创作项目的开发者和创始人怎么说。",
+    "icon": "GoThumbsup",
+    "items": [
+      {
+        "title": "陈大卫",
+        "label": "AI图像.shop 创始人",
+        "description": "AI图像 为我们节省了数月的开发时间。我们仅用 2 天就启动了图像业务，一周内就获得了第一个付费客户！",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "金瑞秋",
+        "label": "HeyBeauty.ai 技术总监",
+        "description": "预构建的 AI 基础设施是一个游戏规则改变者。我们无需担心架构 - 只需专注于 AI 美容技术并快速上线。",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "马库斯",
+        "label": "独立开发者",
+        "description": "作为独立开发者，AI图像 给了我所需的一切 - 身份验证、支付、AI 功能和漂亮的 UI。一个周末就启动了我的图像创作项目！",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "常见问题",
+    "title": "关于 AI图像 的常见问题",
+    "description": "还有其他问题？通过 Discord 或电子邮件联系我们。",
+    "items": [
+      {
+        "title": "AI图像 究竟是什么，它是如何工作的？",
+        "description": "AI图像 是一个专门为构建图像创作项目设计的综合性 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动图像创作项目。"
+      },
+      {
+        "title": "使用 AI图像 需要高级技术技能吗？",
+        "description": "虽然基本的编程知识会有帮助，但 AI图像 设计得非常开发者友好。我们的模板和文档使您即使不是 AI 或云基础设施专家也能轻松入门。"
+      },
+      {
+        "title": "我可以用 AI图像 构建什么类型的图像创作项目？",
+        "description": "AI图像 支持广泛的图像创作应用，从横版图像到竖版图像。我们的模板涵盖流行用例，如图像生成器等。"
+      },
+      {
+        "title": "使用 AI图像 通常需要多长时间才能启动？",
+        "description": "使用 AI图像，您可以在几小时内完成工作原型，并在几小时内完成生产就绪的应用。我们的一键部署和预配置基础设施显著缩短了传统的数月开发周期。"
+      }
+    ]
+  },
+  "image": {
+    "title": "AI 图像生成器",
+    "description": "输入你的创意，让 AI 为你创造独特的图像",
+    "input": {
+      "placeholder": "描述你想要的图像，例如：A breathtaking sunset over the ocean, with golden rays piercing through dramatic clouds..."
+    },
+    "button": {
+      "generate": "生成图像",
+      "generating": "生成中..."
+    },
+    "error": {
+      "try_again": "生成遇到了一点小问题，请稍后重试"
+    },
+    "gallery": {
+      "title": "图像展廊"
+    }
+  },
+  "generator": {
+    "title": "AI 图像生成器",
+    "description": "输入你的创意描述，让 AI 为你创造独特的图像",
+    "input": {
+      "placeholder": "描述你想要的图像效果，例如：一个宁静的海边日落，温柔的波浪反射着金色的阳光..."
+    },
+    "button": {
+      "generate": "开始生成",
+      "generating": "生成中..."
+    },
+    "error": {
+      "default": "生成过程中出现错误，请稍后重试",
+      "empty_prompt": "请输入图像描述",
+      "generating": "正在生成中，请稍候..."
+    },
+    "gallery": {
+      "title": "生成的图像",
+      "empty": "还没有生成任何图像"
+    }
+  },
+  "cta": {
+    "name": "cta",
+    "title": "启动您的第一个图像创作项目",
+    "description": "从这里开始，使用 AI图像 启动。",
+    "buttons": [
+      {
+        "title": "获取 AI图像",
+        "url": "",
+        "target": "_blank",
+        "icon": "GoArrowUpRight"
+      },
+      {
+        "title": "阅读文档",
+        "url": "",
+        "target": "_blank",
+        "variant": "outline"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "AI图像",
+      "description": "AI图像 是一个用于构建图像创作项目的 NextJS 模板。通过丰富的模板和组件快速启动。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "AI图像生成器"
+      },
+      "url": "/"
+    },
+    "copyright": " 2025 • AI图像 保留所有权利。",
+    "nav": {
+      "items": [
+        {
+          "title": "关于",
+          "children": [
+            {
+              "title": "功能特点",
+              "url": "/#feature",
+              "target": "_self"
+            },
+            {
+              "title": "案例展示",
+              "url": "/#showcase",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "资源",
+          "children": [
+            {
+              "title": "文档",
+              "url": "",
+              "target": "_blank"
+            },
+            {
+              "title": "组件",
+              "url": "",
+              "target": "_blank"
+            },
+            {
+              "title": "模板",
+              "url": "",
+              "target": "_blank"
+            }
+          ]
+        },
+        {
+          "title": "友情链接",
+          "children": [
+            {
+              "title": "ThinkAny",
+              "url": "",
+              "target": "_blank"
+            },
+            {
+              "title": "HeyBeauty",
+              "url": "",
+              "target": "_blank"
+            },
+            {
+              "title": "Pagen",
+              "url": "",
+              "target": "_blank"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "RiGithubFill",
+          "url": "",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "",
+          "target": "_blank"
+        },
+        {
+          "title": "邮箱",
+          "icon": "RiMailLine",
+          "url": "",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "隐私政策",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "服务条款",
+          "url": "/terms-of-service"
+        }
+      ]
+    }
+  }
+}

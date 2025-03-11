@@ -1,0 +1,400 @@
+{
+  "template": "katana-nextjs-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "Flux Generator",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Flux Generator"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Blog",
+          "url": "/posts",
+          "icon": "MdArticle"
+        }
+      ]
+    },
+    "show_sign": true,
+    "show_theme": true,
+    "show_locale": true
+  },
+  "hero": {
+    "name": "hero",
+    "title": "Create Beautiful AI Images",
+    "highlight_text": "Beautiful AI Images",
+    "description": "Transform your ideas into stunning visuals using our advanced AI technology. Perfect for any creative project.<br/>Unprecedented quality, incredible details, and limitless creativity.<br/>From dreamy landscapes to abstract masterpieces - if you can imagine it, Flux can create it.",
+    "announcement": {
+      "label": "Just Released",
+      "title": "✨ ✨ Flux Model 2.0 - Now 10x Faster",
+      "url": "/#gallery"
+    },
+    "tip": "🚀 Powered by the latest Flux technology with enhanced image quality",
+    "buttons": [
+      {
+        "title": "Experience Flux AI",
+        "icon": "RiMagicFill",
+        "url": "#try-it-now",
+        "target": "_self",
+        "variant": "default"
+      },
+      {
+        "title": "View Image Gallery",
+        "icon": "RiGalleryFill",
+        "url": "#generated-visuals",
+        "target": "_self",
+        "variant": "outline"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": true
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "AI-Powered Image Creation",
+    "label": "Features",
+    "description": "Create unique, high-quality images for any device with our advanced AI technology.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "items": [
+      {
+        "title": "Instant Generation",
+        "description": "Create stunning images in seconds with our AI technology",
+        "icon": "RiFlashlightFill"
+      },
+      {
+        "title": "Multiple Resolutions",
+        "description": "Generate images optimized for desktop, mobile, and tablets",
+        "icon": "RiDeviceLine"
+      },
+      {
+        "title": "Custom Styles",
+        "description": "Choose from various artistic styles or create your own unique look",
+        "icon": "RiPaletteLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Why Choose Our Flux Generator",
+    "label": "Benefits",
+    "description": "Experience the future of image creation with our advanced AI technology.",
+    "items": [
+      {
+        "title": "Advanced AI Technology",
+        "description": "Powered by state-of-the-art AI models for stunning, unique images",
+        "icon": "RiAiLine",
+        "image": {
+          "src": "/imgs/features/2.png"
+        }
+      },
+      {
+        "title": "Unlimited Creativity",
+        "description": "Generate as many variations as you want until you find the perfect image",
+        "icon": "RiLightbulbLine",
+        "image": {
+          "src": "/imgs/features/3.png"
+        }
+      },
+      {
+        "title": "Easy to Use",
+        "description": "Simple interface for both beginners and professional designers",
+        "icon": "RiUserSmileLine",
+        "image": {
+          "src": "/imgs/features/4.png"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Create Your Perfect Image in 3 Steps",
+    "description": "Transform your ideas into stunning images instantly:",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "Describe Your Vision",
+        "description": "Enter your idea or upload a reference image to inspire your image design",
+        "image": {
+          "src": "/imgs/usage/1.png",
+          "alt": "Describe your image"
+        }
+      },
+      {
+        "title": "Choose Your Style",
+        "description": "Select from various artistic styles or customize the settings to match your preferences",
+        "image": {
+          "src": "/imgs/usage/2.png",
+          "alt": "Choose style"
+        }
+      },
+      {
+        "title": "Download & Enjoy",
+        "description": "Get your AI-generated image in multiple resolutions, ready for any device",
+        "image": {
+          "src": "/imgs/usage/3.png",
+          "alt": "Download image"
+        }
+      }
+    ]
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "Gallery of AI-Generated Images",
+    "description": "Explore thousands of unique images created by our community",
+    "items": [
+      {
+        "title": "Landscape Collection",
+        "description": "Beautiful natural scenery and landscapes",
+        "image": {
+          "src": "/imgs/showcase/landscape.png",
+          "alt": "AI Landscape Images"
+        },
+        "url": "/gallery/landscape"
+      },
+      {
+        "title": "Abstract Art",
+        "description": "Modern and creative abstract designs",
+        "image": {
+          "src": "/imgs/showcase/abstract.png",
+          "alt": "AI Abstract Images"
+        },
+        "url": "/gallery/abstract"
+      },
+      {
+        "title": "Anime Style",
+        "description": "Anime-inspired images",
+        "image": {
+          "src": "/imgs/showcase/anime.png",
+          "alt": "AI Anime Images"
+        },
+        "url": "/gallery/anime"
+      }
+    ]
+  },
+  "stats": {
+    "name": "stats",
+    "label": "Stats",
+    "title": "People Love Flux Generator",
+    "description": "for it's easy to use and fast to ship.",
+    "icon": "FaRegHeart",
+    "items": [
+      {
+        "title": "Trusted by",
+        "label": "99+",
+        "description": "Customers"
+      },
+      {
+        "title": "Built in",
+        "label": "20+",
+        "description": "Components"
+      },
+      {
+        "title": "Ship Fast in",
+        "label": "5",
+        "description": "Minutes"
+      }
+    ]
+  },
+  "testimonial": {
+    "name": "testimonial",
+    "label": "Testimonials",
+    "title": "What Our Users Say",
+    "description": "Join thousands of satisfied users creating amazing images with AI",
+    "items": [
+      {
+        "avatar": "/avatars/1.png",
+        "name": "Sarah Chen",
+        "title": "Digital Artist",
+        "content": "This AI image generator has revolutionized my creative process. The quality and variety of styles are incredible!"
+      },
+      {
+        "avatar": "/avatars/2.png",
+        "name": "Mike Johnson",
+        "title": "UI Designer",
+        "content": "Perfect for creating unique backgrounds for my design projects. The 4K resolution output is crystal clear."
+      },
+      {
+        "avatar": "/avatars/3.png",
+        "name": "Lisa Wong",
+        "title": "Content Creator",
+        "content": "I use this daily for my YouTube thumbnails and social media. The anime style generation is exactly what I needed."
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Frequently Asked Questions About Flux Generator",
+    "description": "Have another question? Contact us on Discord or by email.",
+    "items": [
+      {
+        "title": "What exactly is Flux Generator and how does it work?",
+        "description": "Flux Generator is a comprehensive NextJS boilerplate designed specifically for building AI image generators. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+      },
+      {
+        "title": "Do I need advanced technical skills to use Flux Generator?",
+        "description": "While basic programming knowledge is helpful, Flux Generator is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+      },
+      {
+        "title": "What types of AI images can I build with Flux Generator?",
+        "description": "Flux Generator supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+      },
+      {
+        "title": "How long does it typically take to launch with Flux Generator?",
+        "description": "With Flux Generator, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+      },
+      {
+        "title": "What's included in the Flux Generator infrastructure?",
+        "description": "Flux Generator provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+      },
+      {
+        "title": "Can I customize the templates to match my brand?",
+        "description": "Absolutely! All Flux Generator templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+      }
+    ]
+  },
+  "generator": {
+    "title": "Flux Generator",
+    "description": "Transform your ideas into stunning AI-generated visuals",
+    "input": {
+      "placeholder": "Describe your creative concept, e.g.: A cyberpunk cityscape at night with neon lights reflecting in rain puddles..."
+    },
+    "button": {
+      "generate": "Generate",
+      "generating": "Generating..."
+    },
+    "error": {
+      "default": "Something went wrong. Please try again",
+      "empty_prompt": "Please enter a description",
+      "generating": "Creating your image..."
+    },
+    "gallery": {
+      "title": "Generated Images",
+      "empty": "No images generated yet"
+    }
+  },
+  "image": {
+    "title": "Flux Generator",
+    "description": "Enter your creative idea and let AI create unique visuals for you",
+    "input": {
+      "placeholder": "Describe the image you want, e.g.: A breathtaking sunset over the ocean, with golden rays piercing through dramatic clouds..."
+    },
+    "button": {
+      "generate": "Generate Image",
+      "generating": "Generating..."
+    },
+    "error": {
+      "try_again": "Something went wrong. Please try again later."
+    },
+    "gallery": {
+      "title": "Image Gallery"
+    }
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Ship your first AI image generator",
+    "description": "Start from here, ship with Flux Generator.",
+    "buttons": [
+      {
+        "title": "Get Flux Generator",
+        "url": "https://aiimage.shop",
+        "target": "_blank",
+        "icon": "GoArrowUpRight"
+      },
+      {
+        "title": "Read Document",
+        "url": "https://docs.aiimage.shop",
+        "target": "_blank",
+        "variant": "outline"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "Flux Generator",
+      "description": "Create stunning AI images with artificial intelligence. Transform your ideas into beautiful visuals for any purpose.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Flux Generator"
+      }
+    },
+    "links": [
+      {
+        "title": "Home",
+        "url": "https://aiimage.shop",
+        "type": "link"
+      },
+      {
+        "title": "Documentation",
+        "url": "https://docs.aiimage.shop",
+        "type": "link"
+      },
+      {
+        "title": "Product",
+        "items": [
+          {
+            "title": "Features",
+            "url": "/#features"
+          },
+          {
+            "title": "Gallery",
+            "url": "/#gallery"
+          },
+          {
+            "title": "API",
+            "url": "/api"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "items": [
+          {
+            "title": "Tutorial",
+            "url": "/tutorial"
+          },
+          {
+            "title": "Style Guide",
+            "url": "/styles"
+          },
+          {
+            "title": "Blog",
+            "url": "/blog"
+          }
+        ]
+      },
+      {
+        "title": "Company",
+        "items": [
+          {
+            "title": "About",
+            "url": "/about"
+          },
+          {
+            "title": "Contact",
+            "url": "/contact"
+          },
+          {
+            "title": "Terms",
+            "url": "/terms"
+          },
+          {
+            "title": "Privacy",
+            "url": "/privacy"
+          }
+        ]
+      }
+    ]
+  }
+}

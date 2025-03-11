@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "theme.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  :root {
+    --sidebar-background: var(--background);
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--background);
+    --sidebar-accent-foreground: var(--primary);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
+  }
+  .dark {
+    --sidebar-background: var(--background);
+    --sidebar-foreground: var(--foreground);
+    --sidebar-primary: var(--primary);
+    --sidebar-primary-foreground: var(--primary-foreground);
+    --sidebar-accent: var(--accent);
+    --sidebar-accent-foreground: var(--accent-foreground);
+    --sidebar-border: var(--border);
+    --sidebar-ring: var(--ring);
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow-md {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 5px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  .text-shadow-none {
+    text-shadow: none;
+  }
+  
+  .bg-dots-light {
+    background-image: 
+      radial-gradient(rgba(140, 45, 226, 0.07) 1px, transparent 1px),
+      radial-gradient(rgba(140, 45, 226, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+  }
+  
+  .bg-grid-light {
+    background-image: 
+      linear-gradient(to right, rgba(140, 45, 226, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(140, 45, 226, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+  
+  .animate-gradient-x {
+    background-size: 200% 100%;
+    animation: gradientX 8s ease infinite;
+  }
+  
+  @keyframes gradientX {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #9ca3af;
+  }
+
+  input:focus,
+  textarea:focus {
+    caret-color: #ec4899;
+    outline: none;
+  }
+}
+
+body.dark {
+  position: relative;
+  overflow-x: hidden;
+  background-color: hsl(var(--background));
+  background-image: 
+    radial-gradient(circle at 20% 35%, rgba(140, 45, 226, 0.07) 0%, transparent 50%),
+    radial-gradient(circle at 75% 44%, rgba(140, 45, 226, 0.05) 0%, transparent 60%),
+    radial-gradient(circle at 5% 85%, rgba(180, 100, 255, 0.03) 0%, transparent 40%);
+}
+
+body:not(.dark) {
+  position: relative;
+  overflow-x: hidden;
+  background-color: hsl(var(--background));
+}

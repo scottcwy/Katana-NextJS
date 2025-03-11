@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "title": "创造精美AI图像 | Flux AI图像生成器",
+    "description": "使用我们先进的AI技术将您的创意转化为精美视觉效果。为任何创意项目提供前所未有的质量和无限创造力。",
+    "keywords": "Flux AI 2.0,AI艺术,图像生成器,高质量图像,快速生成"
+  },
+  "hero": {
+    "title": "Flux AI图像生成器",
+    "description": "使用我们先进的AI技术将您的创意转化为精美视觉效果。适用于任何创意项目。",
+    "description2": "前所未有的质量，令人难以置信的细节，无限的创造力。",
+    "description3": "从梦幻风景到抽象杰作 - 只要能想到，Flux就能为您创造。",
+    "create": "创造",
+    "highlight_text": "精美AI图像",
+    "powered_by": "由最新Flux技术驱动，带来增强图像质量",
+    "scroll_to_explore": "",
+    "announcement": {
+      "label": "全新发布",
+      "title": "Flux模型2.0 - 速度提升10倍"
+    },
+    "buttons": {
+      "create": "体验Flux AI",
+      "gallery": "查看图库"
+    }
+  },
+  "user": {
+    "sign_in": "登录",
+    "sign_out": "退出登录",
+    "credits": "额度",
+    "api_keys": "API 密钥",
+    "my_orders": "我的订单"
+  },
+  "generator": {
+    "title": "Flux 图像生成器",
+    "subtitle": "精美AI图像",
+    "description": "通过简单的文字描述创建精美的AI生成壁纸",
+    "extra_description": "无与伦比的质量，令人难以置信的细节，以及无限的创造力。",
+    "input": {
+      "placeholder": "描述您理想中的图像，例如：夜晚的赛博朋克城市景观，霓虹灯倒映在雨水坑中...",
+      "label": "描述您理想中的图像",
+      "clear": "清除",
+      "clear_tooltip": "清除输入",
+      "characters": "字符"
+    },
+    "prompts": {
+      "suggestions": "尝试这些灵感示例：",
+      "sample1": "未来科技城市景观，有飞行汽车和霓虹灯",
+      "sample2": "日落时分的山景，倒映在湖中",
+      "sample3": "几何形状和鲜艳色彩的抽象数字艺术"
+    },
+    "showcase": {
+      "title": "作品展示",
+      "description": "探索我们AI的可能性",
+      "examples": {
+        "cityscape": "城市景观",
+        "mountain": "山景风光",
+        "abstract": "抽象艺术"
+      }
+    },
+    "placeholder": "描述您想要生成的图像...",
+    "generate": "生成图像",
+    "generating": "正在生成您的图像...",
+    "error": {
+      "generating": "生成图像时出错，请重试。"
+    },
+    "generatedImages": "已生成的图像",
+    "button": {
+      "generate": "生成",
+      "loading": "生成中...",
+      "download": "下载"
+    },
+    "result": {
+      "title": "生成的图片",
+      "download_filename": "ai-壁纸"
+    },
+    "gallery": {
+      "title": "已生成的图像",
+      "button": {
+        "download": "下载",
+        "delete": "删除"
+      },
+      "prompt": {
+        "label": "提示词"
+      },
+      "created": {
+        "at": "创建于"
+      },
+      "empty": {
+        "title": "您的图库等待创作",
+        "description": "创建您的第一个AI生成杰作。在上方描述您的愿景，让我们的AI为您实现。"
+      },
+      "clear_all": "清除所有图像",
+      "download_prefix": "flux-ai-",
+      "download_default": "flux-ai-图像"
+    }
+  },
+  "sign_modal": {
+    "sign_in_title": "登录",
+    "sign_in_description": "登录您的账户",
+    "sign_up_title": "注册",
+    "sign_up_description": "创建新账户",
+    "email_title": "邮箱",
+    "email_placeholder": "输入您的邮箱",
+    "password_title": "密码",
+    "password_placeholder": "输入您的密码",
+    "forgot_password": "忘记密码？",
+    "or": "或",
+    "continue": "继续",
+    "no_account": "没有账户？",
+    "email_sign_in": "使用邮箱登录",
+    "google_sign_in": "使用谷歌登录",
+    "github_sign_in": "使用GitHub登录",
+    "close_title": "关闭",
+    "cancel_title": "取消",
+    "terms_notice": "点击继续，即表示您同意我们的",
+    "terms_of_service": "服务条款",
+    "and": "和",
+    "privacy_policy": "隐私政策",
+    "continue_with": "或继续使用"
+  },
+  "my_orders": {
+    "title": "我的订单",
+    "description": "在 Flux图像生成器 上购买的订单。",
+    "no_orders": "未找到订单",
+    "tip": "",
+    "activate_order": "激活订单",
+    "actived": "已激活",
+    "join_discord": "加入 Discord",
+    "read_docs": "阅读文档",
+    "table": {
+      "order_no": "订单号",
+      "email": "邮箱",
+      "product_name": "产品名称",
+      "amount": "金额",
+      "paid_at": "支付时间",
+      "github_username": "GitHub 用户名",
+      "status": "状态"
+    }
+  },
+  "my_credits": {
+    "title": "我的积分",
+    "left_tip": "剩余积分: {left_credits}",
+    "no_credits": "没有积分记录",
+    "recharge": "充值",
+    "table": {
+      "trans_no": "交易号",
+      "trans_type": "交易类型",
+      "credits": "积分",
+      "updated_at": "更新时间",
+      "status": "状态"
+    }
+  },
+  "api_keys": {
+    "title": "API 密钥",
+    "tip": "请妥善保管您的 API 密钥，避免泄露",
+    "no_api_keys": "没有 API 密钥",
+    "create_api_key": "创建 API 密钥",
+    "table": {
+      "name": "名称",
+      "key": "密钥",
+      "created_at": "创建时间"
+    },
+    "form": {
+      "name": "名称",
+      "name_placeholder": "API 密钥名称",
+      "submit": "提交"
+    }
+  },
+  "api": {
+    "errors": {
+      "generic": "发生错误，请重试。",
+      "image_generation": "生成图像时出错",
+      "no_prompt": "请提供提示词",
+      "insufficient_credits": "积分不足",
+      "invalid_size": "图像尺寸无效",
+      "invalid_params": "参数无效",
+      "invalid_interval": "间隔无效",
+      "invalid_valid_months": "有效月份无效",
+      "no_auth": "需要授权。请先登录您的账户。",
+      "checkout_failed": "结账失败"
+    }
+  },
+  "error": {
+    "generating": "生成图像时出错，请重试。"
+  },
+  "blog": {
+    "title": "博客",
+    "description": "关于 Flux图像生成器 的新闻、资源和更新",
+    "read_more_text": "阅读更多"
+  },
+  "footer": {
+    "powered_by": "基于 Katana-NextJS",
+    "listed_on": "Dir2AI",
+    "listed_on_title": "Dir2AI - 最佳AI网站和工具",
+    "current_year": "{{year}}",
+    "copyright": "AI图像生成器 - 创建独特壁纸和艺术作品",
+    "description": "AI图像是一个用于生成精美壁纸的NextJS项目"
+  },
+  "result": {
+    "title": "生成的图片"
+  }
+}

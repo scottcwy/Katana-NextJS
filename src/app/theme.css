@@ -1,0 +1,43 @@
+:root  {
+  --background: 240 17% 5%; /* 对应 bg-gray-950 */
+  --foreground: 240 5% 90%; /* 对应 text-white */
+  --card: 240 17% 5%;
+  --card-foreground: 240 5% 90%;
+  --popover: 240 17% 5%;
+  --popover-foreground: 240 5% 90%;
+  --primary: 265 89% 66%; /* 对应 purple-600 */
+  --primary-foreground: 0 0% 100%; /* 白色文本 */
+  --secondary: 240 17% 14%; /* 对应 gray-800 */
+  --secondary-foreground: 0 0% 100%;
+  --muted: 240 17% 14%; /* 对应 gray-800 */
+  --muted-foreground: 240 5% 65%; /* 对应 text-gray-400 */
+  --accent: 330 90% 65%; /* 对应 pink-500 */
+  --accent-foreground: 240 5% 90%;
+  --destructive: 0 84% 60%; /* 对应 red-600 */
+  --destructive-foreground: 0 0% 100%;
+  --border: 240 17% 14%; /* 对应 border-gray-800 */
+  --input: 240 17% 18%; /* 对应 border-gray-700 */
+  --ring: 265 89% 66%; /* 与primary相同 */
+  --radius: 0.5rem;
+}
+.light  {
+  --background: 330 60% 97%; /* 淡粉色背景，降低亮度 */
+  --foreground: 330 60% 15%; /* 深粉色文本，增强对比度 */
+  --card: 330 30% 98%; /* 淡粉色卡片背景 */
+  --card-foreground: 330 60% 15%;
+  --popover: 330 30% 98%;
+  --popover-foreground: 330 60% 15%;
+  --primary: 330 80% 55%; /* 粉色主题色，降低亮度 */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 330 30% 92%; /* 淡粉色次要背景，降低亮度 */
+  --secondary-foreground: 330 60% 25%;
+  --muted: 330 30% 92%;
+  --muted-foreground: 330 40% 35%; /* 增强对比度 */
+  --accent: 265 89% 60%; /* 紫色强调色，降低亮度 */
+  --accent-foreground: 265 60% 20%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 330 40% 85%; /* 边框颜色，增强对比度 */
+  --input: 330 40% 85%;
+  --ring: 330 80% 55%; /* 与primary相同 */
+}

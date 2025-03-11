@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /*?*q=
+Disallow: /privacy-policy
+Disallow: /terms-of-service
+Disallow: /admin/
+Disallow: /(admin)/
+
+# 站点地图
+Sitemap: https://www.example.com/sitemap.xml
+
+# 主机
+Host: https://www.example.com

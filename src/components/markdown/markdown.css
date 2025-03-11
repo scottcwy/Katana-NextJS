@@ -1,0 +1,68 @@
+.markdown {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  line-height: 1.6;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown h1 {
+  font-size: 2em;
+}
+.markdown h2 {
+  font-size: 1.5em;
+}
+.markdown h3 {
+  font-size: 1.25em;
+}
+
+.markdown p {
+  margin-bottom: 16px;
+}
+
+.markdown a {
+  color: #3182ce;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+.markdown pre {
+  margin-bottom: 16px;
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  /* background-color: #1f2937; */
+  border-radius: 6px;
+}
+
+.markdown code {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 85%;
+}
+
+.markdown ul,
+.markdown ol {
+  padding-left: 1em;
+  margin-bottom: 16px;
+  list-style-type: square;
+}
+
+.markdown img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
