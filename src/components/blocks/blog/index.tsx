@@ -2,8 +2,11 @@ import { ArrowRight } from "lucide-react";
 import { Blog as BlogType } from "@/types/blocks/blog";
 import { motion, SlideUp, FadeIn } from "@/components/ui/motion";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
 
 export default function Blog({ blog }: { blog: BlogType }) {
+  const t = useTranslations('blog');
+  
   if (blog.disabled) {
     return null;
   }
@@ -26,83 +29,98 @@ export default function Blog({ blog }: { blog: BlogType }) {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12">
-          {blog.items && blog.items.map((item, index) => (
-            <div key={index} className="flex">
-              <FadeIn delay={index * 0.1}>
-                <a
-                  href={item.url || `/${item.locale}/posts/${item.slug}`}
-                  target={item.target || "_self"}
-                  className="group h-full relative flex flex-col overflow-hidden rounded-xl bg-gray-900/40 hover:bg-gray-900/50 hover:shadow-xl transition-all duration-300 border border-purple-500/20 hover:border-purple-500/30 backdrop-blur-sm"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/20 group-hover:to-gray-900/10 z-10 transition-colors duration-300"></div>
-                  
-                  {item.cover_url && (
-                    <div className="aspect-[16/9] w-full overflow-hidden">
-                      <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
-                        <img
-                          src={item.cover_url}
-                          alt={item.title || ""}
-                          className="h-full w-full object-cover object-center"
-                        />
-                      </div>
-                    </div>
-                  )}
-                  
-                  <div className="flex flex-1 flex-col justify-between p-6 z-20">
-                    <div className="space-y-4">
-                      <div className="space-y-2">
-                        {item.created_at && (
-                          <p className="text-xs text-purple-300/70 font-medium tracking-wider">
-                            {new Date(item.created_at).toLocaleDateString('en-US', {
-                              year: 'numeric', 
-                              month: 'long', 
-                              day: 'numeric'
-                            })}
-                          </p>
-                        )}
-                        <h3 className="text-xl font-bold leading-tight tracking-tight text-white group-hover:text-purple-300 transition-colors duration-300 line-clamp-2">
-                          {item.title}
-                        </h3>
-                        <p className="text-gray-300/80 line-clamp-3">
-                          {item.description}
-                        </p>
-                      </div>
-                    </div>
+        {blog.items && blog.items.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12">
+            {blog.items.map((item, index) => (
+              <div key={index} className="flex">
+                <FadeIn delay={index * 0.1}>
+                  <a
+                    href={item.url || `/${item.locale}/posts/${item.slug}`}
+                    target={item.target || "_self"}
+                    className="group h-full relative flex flex-col overflow-hidden rounded-xl bg-gray-900/40 hover:bg-gray-900/50 hover:shadow-xl transition-all duration-300 border border-purple-500/20 hover:border-purple-500/30 backdrop-blur-sm"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/20 group-hover:to-gray-900/10 z-10 transition-colors duration-300"></div>
                     
-                    {blog.read_more_text && (
-                      <div className="pt-4">
-                        <div className="inline-flex items-center text-sm font-medium text-purple-400 group-hover:text-purple-300 group-hover:underline gap-1">
-                          {blog.read_more_text}
-                          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    {item.cover_url && (
+                      <div className="aspect-[16/9] w-full overflow-hidden">
+                        <div className="h-full w-full transition-transform duration-500 group-hover:scale-105">
+                          <img
+                            src={item.cover_url}
+                            alt={item.title || ""}
+                            className="h-full w-full object-cover object-center"
+                          />
                         </div>
                       </div>
                     )}
-                  </div>
-                  
-                  {item.author_name && (
-                    <div className="flex items-center gap-2 px-6 py-4 border-t border-border/30">
-                      {item.author_avatar_url ? (
-                        <img
-                          src={item.author_avatar_url}
-                          alt={item.author_name}
-                          className="rounded-full h-8 w-8 object-cover border border-border/50"
-                        />
-                      ) : (
-                        <div className="rounded-full h-8 w-8 bg-muted flex items-center justify-center text-muted-foreground">
-                          {item.author_name.charAt(0)}
+                    
+                    <div className="flex flex-1 flex-col justify-between p-6 z-20">
+                      <div className="space-y-4">
+                        <div className="space-y-2">
+                          {item.created_at && (
+                            <p className="text-xs text-purple-300/70 font-medium tracking-wider">
+                              {new Date(item.created_at).toLocaleDateString('en-US', {
+                                year: 'numeric', 
+                                month: 'long', 
+                                day: 'numeric'
+                              })}
+                            </p>
+                          )}
+                          <h3 className="text-xl font-bold leading-tight tracking-tight text-white group-hover:text-purple-300 transition-colors duration-300 line-clamp-2">
+                            {item.title}
+                          </h3>
+                          <p className="text-gray-300/80 line-clamp-3">
+                            {item.description}
+                          </p>
+                        </div>
+                      </div>
+                      
+                      {blog.read_more_text && (
+                        <div className="pt-4">
+                          <div className="inline-flex items-center text-sm font-medium text-purple-400 group-hover:text-purple-300 group-hover:underline gap-1">
+                            {blog.read_more_text}
+                            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                          </div>
                         </div>
                       )}
-                      <span className="text-sm text-muted-foreground">
-                        {item.author_name}
-                      </span>
                     </div>
-                  )}
-                </a>
-              </FadeIn>
-            </div>
-          ))}
-        </div>
+                    
+                    {item.author_name && (
+                      <div className="flex items-center gap-2 px-6 py-4 border-t border-border/30">
+                        {item.author_avatar_url ? (
+                          <img
+                            src={item.author_avatar_url}
+                            alt={item.author_name}
+                            className="rounded-full h-8 w-8 object-cover border border-border/50"
+                          />
+                        ) : (
+                          <div className="rounded-full h-8 w-8 bg-muted flex items-center justify-center text-muted-foreground">
+                            {item.author_name.charAt(0)}
+                          </div>
+                        )}
+                        <span className="text-sm text-muted-foreground">
+                          {item.author_name}
+                        </span>
+                      </div>
+                    )}
+                  </a>
+                </FadeIn>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="flex flex-col items-center justify-center py-20 px-4 text-center">
+            <FadeIn>
+              <div className="max-w-md space-y-4">
+                <h2 className="text-2xl font-bold tracking-tight text-white">
+                  {t('empty.title') || "No Articles Yet"}
+                </h2>
+                <p className="text-muted-foreground">
+                  {t('empty.description') || "Stay tuned! We're working on creating valuable content for you."}
+                </p>
+              </div>
+            </FadeIn>
+          </div>
+        )}
       </div>
     </section>
   );

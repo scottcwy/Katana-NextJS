@@ -185,7 +185,11 @@
   "blog": {
     "title": "Blog",
     "description": "News, resources and updates about Flux Image Generator",
-    "read_more_text": "Read More"
+    "read_more_text": "Read More",
+    "empty": {
+      "title": "No Articles Yet",
+      "description": "Stay tuned! We're working on creating valuable content for you."
+    }
   },
   "footer": {
     "powered_by": "build with Katana-NextJS",
