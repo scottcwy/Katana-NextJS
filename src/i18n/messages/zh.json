@@ -182,6 +182,12 @@
   "error": {
     "generating": "生成图像时出错，请重试。"
   },
+  "Error": {
+    "title": "暂无博客",
+    "message": "当前没有可用的博客内容",
+    "retry": "重试",
+    "home": "返回主页"
+  },
   "blog": {
     "title": "博客",
     "description": "关于 Flux图像生成器 的新闻、资源和更新",

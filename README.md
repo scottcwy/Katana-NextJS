@@ -1,53 +1,77 @@
-# Katana-NextJS
+# 🚀 Katana-NextJS
 
-Nextjs Pages in a Swoosh! A modern Next.js framework for building Single-Screen Apps in just 5 minutes.
+<div align="center">
 
-![preview](preview.png)
+简体中文 | [English](./README.en.md)
 
-## Prerequisites
+</div>
 
-- Node.js 18.0.0 or later
-- pnpm (recommended) or npm
+✨ Nextjs Pages in a Swoosh! 一个现代化的 Next.js 框架，只需 5 分钟即可构建精美的单页应用。
 
-## Quick Start
+## 🌟 框架预览
 
-1. Clone the repository
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="preview.png" alt="主界面" width="400px" />
+        <br />
+        <em>🏠 主界面设计</em>
+      </td>
+      <td align="center">
+        <img src="preview-generator.png"功能展示" width="400px" />
+        <br />
+        <em>⚙️ 核心功能展示</em>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## 🛠️ 环境要求
+
+- Node.js 20.x 或更高版本
+- Next.js 14.2.9
+- pnpm (推荐) 或 npm
+
+## 🚀 快速开始
+
+1. 克隆仓库
 
 ```bash
 git clone https://github.com/scottcwy/Katana-NextJS.git
 ```
 
-2. Install dependencies
+2. 安装依赖
 
 ```bash
 pnpm install
 ```
 
-3. Run the development server
+3. 运行开发服务器
 
 ```bash
 pnpm dev
 ```
 
-## Features
+## ✨ 特性
 
-- **One-Line Landing Page Generation**: Create complete, professional landing pages with a single prompt
-- **Advanced Next.js Framework**: Built with cutting-edge technology and supports both Vercel and Cloudflare deployment
-- **Comprehensive Content Platform**: Integrated admin dashboard, blog system with markdown support, and SEO tools for meta tags and structured data to manage content and improve search rankings
-- **Authentication System**: Ready-to-use login and user management functionality
-- **Payment Integration**: Pre-configured payment processing with secure checkout flows
-- **Built-in Internationalization**: Full support for multiple languages with seamless switching between English and Chinese
-- **Customizable Themes**: Easily modify color schemes and UI elements to match your brand
-- **Sample Project: Flux Generator**: Includes AI wallpaper generator as a demonstration of framework capabilities
+- **📝 一行代码生成落地页**: 只需一个提示词，即可创建完整、专业的落地页
+- **🔥 先进的 Next.js 框架**: 采用尖端技术构建，支持 Vercel 和 Cloudflare 部署
+- **📚 全面的内容平台**: 集成管理仪表板、支持 Markdown 的博客系统和 SEO 工具
+- **🔐 认证系统**: 随时可用的登录和用户管理功能
+- **💳 支付集成**: 预配置的支付处理和安全结账流程
+- **🌐 内置国际化**: 完全支持多语言，可无缝切换英文和中文
+- **🎨 可定制主题**: 轻松修改配色方案和 UI 元素以匹配您的品牌
+- **🖼️ 示例项目: Flux 生成器**: 包含 AI 壁纸生成器，展示框架功能
 
-## Core Components
+## 🧩 核心组件
 
-### 1. Hero Component
+### 1. 🎯 Hero 组件
 
-The Hero component creates an engaging header section for your landing page.
+Hero 组件用于创建引人注目的页面头部区域。
 
 ```tsx
-// Example usage in your page
+// 使用示例
 import Hero from "@/components/blocks/hero";
 
 export default function Page() {
@@ -55,12 +79,12 @@ export default function Page() {
 }
 ```
 
-### 2. ImageGenerator Component
+### 2. 🎨 图像生成器组件
 
-The ImageGenerator component provides an AI-powered image generation interface.
+图像生成器组件提供 AI 驱动的图像生成界面。
 
 ```tsx
-// Example usage with dynamic import
+// 使用动态导入示例
 import dynamic from 'next/dynamic';
 
 const Generator = dynamic(() => 
@@ -73,12 +97,12 @@ export default function Page() {
 }
 ```
 
-### 3. Pricing Component
+### 3. 💰 价格组件
 
-The Pricing component displays pricing plans and options.
+价格组件用于展示定价计划和选项。
 
 ```tsx
-// Example usage
+// 使用示例
 import Pricing from "@/components/blocks/pricing";
 
 export default function Page() {
@@ -86,70 +110,83 @@ export default function Page() {
 }
 ```
 
-## Authentication and Payments
+## 🔒 认证与支付
 
-- Configure authentication providers in `.env`
+- 在 `.env` 中配置认证提供商
 
 ```bash
-# Enable GitHub authentication
+# 启用 GitHub 认证
 NEXT_PUBLIC_AUTH_GITHUB_ENABLED="true"
 ```
 
-- Set up payment integration
+- 设置支付集成
 
 ```bash
-# Configure Stripe keys
+# 配置 Stripe 密钥
 STRIPE_PUBLIC_KEY="your_stripe_public_key"
 STRIPE_PRIVATE_KEY="your_stripe_private_key"
 ```
 
-- Access the admin dashboard at `/admin` after setting up authentication
+- 设置认证后即可访问管理后台 `/admin`
 
-## Customization
+## ⚙️ 自定义配置
 
-- Set your environment variables
+- 设置环境变量
 
 ```bash
 cp .env.example .env.local
 ```
+- 自定义主题
+您可以使用 shadcn UI 的主题生成器轻松创建和应用自定义主题：
 
-- Customize your theme
+1. 访问 shadcn UI 主题生成器
+2. 在主题生成器中调整颜色、圆角和字体等设置，直到满意为止
+3. 点击右上角的"复制"按钮，复制生成的 CSS 代码
+4. 将复制的代码粘贴到项目的 src/app/theme.css 文件中
+5. 件后刷新应用，即可看到新主题效果
 
-```bash
-# Edit the theme variables in src/app/theme.css
-# Available color schemes: light, dark, system
-# Example:
-html {
-  --primary: 222.2 47.4% 11.2%;
-  --secondary: 217.2 32.6% 17.5%;
-  --accent: 210 40% 96.1%;
-  /* Add more custom colors as needed */
+```css
+@layer base {
+  :root {
+    /* 基础颜色 */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    
+    /* 主要颜色 */
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    
+    /* 次要颜色 */
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+  }
+}
+/* README 修饰框样式 */
+.readme-container {
+  background: var(--card);
+  border: 1px solid hsl(var(--card-border));
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--card-shadow);
+  margin: 1rem 0;
 }
 ```
 
-- Generate a new landing page with a single prompt
-- In an AI editor (Cursor or Windsurf), ask AI to modify the i18n JSON files based on a specific theme to achieve the effect of changing the landing page with just one sentence
+- 使用单个提示词生成新的落地页
+- 在 AI 编辑器（如 Cursor 或 Windsurf）中，要求 AI 根据特定主题修改 i18n JSON 文件，实现一句话更改落地页的效果
 
-## Deploy
+## 🚀 部署
 
-Deploy your own instance of Katana-NextJS with Vercel:
+使用 Vercel 部署您自己的 Katana-NextJS 实例：
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fscottcwy%2FKatana-NextJS)
 
-Just click the button above to deploy, and Vercel will guide you through the setup process. No configuration required!
+只需点击上方按钮即可部署，Vercel 将指导您完成设置过程。无需额外配置！
 
-## About
+## ℹ️ 关于
 
-- Version: 0.2.1
-- Author: scottcwy
-- Website: [https://www.flux.xz.cn](https://www.flux.xz.cn)
+- 版本: 0.2.1
+- 作者: scottcwy
+- 网站: [https://www.flux.xz.cn](https://www.flux.xz.cn)
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![NPM Version](https://img.shields.io/badge/npm-v1.0.0-blue)](https://www.npmjs.com/package/katana-nextjs)
-[![Build Status](https://img.shields.io/github/workflow/status/scottcwy/Katana-NextJS/CI)](https://github.com/scottcwy/Katana-NextJS/actions)
-[![Issues](https://img.shields.io/github/issues/scottcwy/Katana-NextJS)](https://github.com/scottcwy/Katana-NextJS/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/scottcwy/Katana-NextJS/pulls)
 
-[![构建状态](https://img.shields.io/github/workflow/status/scottcwy/Katana-NextJS/CI)](https://github.com/scottcwy/Katana-NextJS/actions)
-[![问题](https://img.shields.io/github/issues/scottcwy/Katana-NextJS)](https://github.com/scottcwy/Katana-NextJS/issues)
-[![欢迎PR](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/scottcwy/Katana-NextJS/pulls)

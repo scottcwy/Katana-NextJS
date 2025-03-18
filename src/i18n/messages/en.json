@@ -110,77 +110,11 @@
   "error": {
     "generating": "Error generating image. Please try again."
   },
-  "sign_modal": {
-    "sign_in_title": "Sign In",
-    "sign_in_description": "Sign in to your account",
-    "sign_up_title": "Sign Up",
-    "sign_up_description": "Create a new account",
-    "email_title": "Email",
-    "email_placeholder": "Enter your email",
-    "password_title": "Password",
-    "password_placeholder": "Enter your password",
-    "forgot_password": "Forgot password?",
-    "or": "Or",
-    "continue": "Continue",
-    "no_account": "Don't have an account?",
-    "email_sign_in": "Sign in with Email",
-    "google_sign_in": "Sign in with Google",
-    "github_sign_in": "Sign in with GitHub",
-    "close_title": "Close",
-    "cancel_title": "Cancel",
-    "terms_notice": "By clicking continue, you agree to our",
-    "terms_of_service": "Terms of Service",
-    "and": "and",
-    "privacy_policy": "Privacy Policy",
-    "continue_with": "Or continue with"
-  },
-  "my_orders": {
-    "title": "My Orders",
-    "description": "Orders purchased on Flux Image Generator.",
-    "no_orders": "No orders found",
-    "tip": "",
-    "activate_order": "Activate Order",
-    "actived": "Activated",
-    "join_discord": "Join Discord",
-    "read_docs": "Read Docs",
-    "table": {
-      "order_no": "Order No",
-      "email": "Email",
-      "product_name": "Product Name",
-      "amount": "Amount",
-      "paid_at": "Paid At",
-      "github_username": "GitHub Username",
-      "status": "Status"
-    }
-  },
-  "my_credits": {
-    "title": "My Credits",
-    "left_tip": "Credits Left: {left_credits}",
-    "no_credits": "No credits record",
-    "recharge": "Recharge",
-    "table": {
-      "trans_no": "Transaction No",
-      "trans_type": "Transaction Type",
-      "credits": "Credits",
-      "updated_at": "Updated At",
-      "status": "Status"
-    }
-  },
-  "api_keys": {
-    "title": "API Keys",
-    "tip": "Please keep your API keys safe and avoid leaking them",
-    "no_api_keys": "No API keys",
-    "create_api_key": "Create API Key",
-    "table": {
-      "name": "Name",
-      "key": "Key",
-      "created_at": "Created At"
-    },
-    "form": {
-      "name": "Name",
-      "name_placeholder": "API Key Name",
-      "submit": "Submit"
-    }
+  "Error": {
+    "title": "No Blog Available",
+    "message": "There are currently no blog posts available",
+    "retry": "Try Again",
+    "home": "Back to Home"
   },
   "blog": {
     "title": "Blog",
