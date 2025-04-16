@@ -132,5 +132,29 @@
     "current_year": "{{year}}",
     "copyright": " Flux AI Image Generator. All rights reserved.",
     "description": "AI image is a NextJS project for generating beautiful wallpapers"
+  },
+  "sign_modal": {
+    "sign_in_title": "Sign In",
+    "sign_in_description": "Sign in to your account",
+    "sign_up_title": "Sign Up",
+    "sign_up_description": "Create a new account",
+    "email_title": "Email",
+    "email_placeholder": "Enter your email",
+    "password_title": "Password",
+    "password_placeholder": "Enter your password",
+    "forgot_password": "Forgot password?",
+    "or": "Or",
+    "continue": "Continue",
+    "no_account": "Don't have an account?",
+    "email_sign_in": "Sign in with Email",
+    "google_sign_in": "Sign in with Google",
+    "github_sign_in": "Sign in with GitHub",
+    "close_title": "Close",
+    "cancel_title": "Cancel",
+    "terms_notice": "By clicking continue, you agree to our",
+    "terms_of_service": "Terms of Service",
+    "and": "and",
+    "privacy_policy": "Privacy Policy",
+    "continue_with": "Or continue with"
   }
 }

@@ -43,7 +43,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function RootLayout({
+export default async function LocaleLayout({
   children,
   params: { locale },
 }: Readonly<{
@@ -56,25 +56,23 @@ export default async function RootLayout({
   console.log('Available messages:', Object.keys(messages));
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased overflow-x-hidden",
-          fontSans.variable
-        )}
-      >
-        <NextIntlClientProvider messages={messages}>
-          <NextAuthSessionProvider>
-            <AppContextProvider>
-              <ThemeProvider attribute="class" disableTransitionOnChange>
-                <AppShell>
-                  {children}
-                </AppShell>
-              </ThemeProvider>
-            </AppContextProvider>
-          </NextAuthSessionProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <NextAuthSessionProvider>
+        <AppContextProvider>
+          <ThemeProvider attribute="class" disableTransitionOnChange>
+            <AppShell>
+              <div
+                className={cn(
+                  "min-h-screen bg-background font-sans antialiased overflow-x-hidden",
+                  fontSans.variable
+                )}
+              >
+                {children}
+              </div>
+            </AppShell>
+          </ThemeProvider>
+        </AppContextProvider>
+      </NextAuthSessionProvider>
+    </NextIntlClientProvider>
   );
 }

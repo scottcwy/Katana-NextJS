@@ -18,7 +18,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   }, []);
 
   return (
-    <NextThemesProvider {...props} forcedTheme="dark" disableTransitionOnChange>
+    <NextThemesProvider {...props} disableTransitionOnChange>
       {children}
     </NextThemesProvider>
   );
