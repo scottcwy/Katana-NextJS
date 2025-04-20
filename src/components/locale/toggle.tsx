@@ -31,7 +31,9 @@ export default function ({ isIcon = false }: { isIcon?: boolean }) {
 
   return (
     <Select value={locale} onValueChange={handleSwitchLanguage}>
-      <SelectTrigger className="flex items-center gap-x-2 border-none text-white/90 bg-transparent rounded-md outline-none hover:bg-primary hover:text-primary-foreground transition-colors duration-300 focus:ring-0 focus:ring-offset-0">
+      <SelectTrigger
+        className="flex items-center gap-x-2 border-none text-foreground bg-background rounded-md outline-none hover:bg-primary/80 hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground dark:hover:bg-accent/80 dark:hover:text-accent-foreground dark:focus:bg-accent dark:focus:text-accent-foreground transition-colors duration-300"
+      >
         <MdLanguage className="text-xl" />
         {!isIcon && (
           <span className="hidden md:block">{localeNames[locale]}</span>

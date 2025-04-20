@@ -1,43 +1,43 @@
 :root  {
-  --background: 265 60% 16%; /* 深紫色背景，更有层次感 */
-  --foreground: 0 0% 95%; /* 更浅的灰白文字，提升对比度 */
-  --card: 265 60% 22%; /* 比背景略浅的紫色卡片 */
-  --card-foreground: 0 0% 98%;
-  --popover: 265 60% 20%; /* 浅紫色弹窗 */
-  --popover-foreground: 0 0% 98%;
-  --primary: 265 89% 66%; /* 明亮紫色主色 */
-  --primary-foreground: 0 0% 100%;
-  --secondary: 265 30% 25%; /* 深紫灰次要色 */
-  --secondary-foreground: 0 0% 100%;
-  --muted: 265 30% 40%; /* 辅助紫灰色 */
-  --muted-foreground: 265 10% 70%;
-  --accent: 330 90% 70%; /* 粉紫色点缀 */
-  --accent-foreground: 265 60% 20%;
-  --destructive: 0 84% 60%; /* 对应 red-600 */
-  --destructive-foreground: 0 0% 100%;
-  --border: 265 30% 25%; /* 对应 border-gray-800 */
-  --input: 265 30% 25%; /* 对应 border-gray-700 */
-  --ring: 265 89% 66%; /* 与primary相同 */
-  --radius: 0.5rem;
-}
-.light  {
-  --background: 330 60% 97%; /* 淡粉色背景，降低亮度 */
-  --foreground: 330 60% 15%; /* 深粉色文本，增强对比度 */
-  --card: 330 30% 98%; /* 淡粉色卡片背景 */
+  --background: 330 60% 97%; /* 淡粉色背景（明亮模式） */
+  --foreground: 330 60% 15%; /* 深粉色文本 */
+  --card: 330 30% 98%;
   --card-foreground: 330 60% 15%;
   --popover: 330 30% 98%;
   --popover-foreground: 330 60% 15%;
-  --primary: 330 80% 55%; /* 粉色主题色，降低亮度 */
+  --primary: 330 80% 55%; /* 粉色主题色 */
   --primary-foreground: 0 0% 100%;
-  --secondary: 330 30% 92%; /* 淡粉色次要背景，降低亮度 */
+  --secondary: 330 30% 92%;
   --secondary-foreground: 330 60% 25%;
   --muted: 330 30% 92%;
-  --muted-foreground: 330 40% 35%; /* 增强对比度 */
-  --accent: 265 89% 60%; /* 紫色强调色，降低亮度 */
+  --muted-foreground: 330 40% 35%;
+  --accent: 265 89% 60%; /* 紫色强调色 */
   --accent-foreground: 265 60% 20%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 98%;
-  --border: 330 40% 85%; /* 边框颜色，增强对比度 */
+  --border: 330 40% 85%;
   --input: 330 40% 85%;
-  --ring: 330 80% 55%; /* 与primary相同 */
+  --ring: 330 80% 55%;
+  --radius: 0.5rem;
+}
+.dark  {
+  --background: 265 60% 16%; /* 深紫色背景（暗黑模式） */
+  --foreground: 0 0% 95%; /* 更浅的灰白文字 */
+  --card: 265 60% 22%;
+  --card-foreground: 0 0% 98%;
+  --popover: 265 60% 20%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 330 90% 70%; /* 高亮粉紫色，覆盖primary为粉色 */
+  --primary-foreground: 265 60% 20%; /* 紫色字体 */
+  --secondary: 265 30% 25%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 265 30% 40%;
+  --muted-foreground: 265 10% 70%;
+  --accent: 265 89% 66%; /* 主题主紫色 accent 也为紫色 */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 265 30% 25%;
+  --input: 265 30% 25%;
+  --ring: 265 89% 66%;
 }

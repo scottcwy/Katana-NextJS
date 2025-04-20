@@ -48,7 +48,7 @@ export default function ImageGallery({ providedImage }: ImageGalleryProps) {
     : defaultImages
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-50 p-4">
+    <div className="flex justify-center items-center min-h-screen bg-background p-4">
       <div className="w-full max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {images.map((image) => (
@@ -62,12 +62,12 @@ export default function ImageGallery({ providedImage }: ImageGalleryProps) {
                   />
                 </div>
               </CardContent>
-              <CardFooter className="p-4 bg-white flex items-center justify-between">
+              <CardFooter className="p-4 bg-background flex items-center justify-between">
                 <div>
-                  <h3 className="font-medium text-gray-900 mb-1">{image.title}</h3>
-                  <p className="text-sm text-gray-500">{image.resolution}</p>
+                  <h3 className="font-medium text-foreground mb-1">{image.title}</h3>
+                  <p className="text-sm text-muted-foreground">{image.resolution}</p>
                 </div>
-                <Avatar className={`${image.avatarColor} text-white`}>
+                <Avatar className={`${image.avatarColor.replace('bg-', 'bg-primary-')} text-foreground`}>
                   <AvatarFallback>{image.avatar}</AvatarFallback>
                 </Avatar>
               </CardFooter>

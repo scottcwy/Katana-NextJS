@@ -9,7 +9,11 @@ export default function SignIn() {
   const { setShowSignModal } = useAppContext();
 
   return (
-    <Button variant="default" onClick={() => setShowSignModal(true)}>
+    <Button
+      variant="default"
+      className="bg-primary dark:bg-accent text-primary-foreground dark:text-accent-foreground border-none transition-colors"
+      onClick={() => setShowSignModal(true)}
+    >
       {t("user.sign_in")}
     </Button>
   );
