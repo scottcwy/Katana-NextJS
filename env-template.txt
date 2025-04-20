@@ -1,0 +1,16 @@
+# 认证相关配置
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=your-nextauth-secret-key
+
+# Coze API配置
+COZE_API_URL="https://api.coze.cn"
+COZE_API_KEY="pat_7UmKEVl4rtjCqJiAnlAy7jmP14vqRmROLsanFxs4ZhHyLJh2XRBD1ooW1ct3MRgm"
+COZE_BOT_ID="7488591335084146697"
+
+# 认证提供商配置
+NEXT_PUBLIC_AUTH_GOOGLE_ENABLED=false
+NEXT_PUBLIC_AUTH_GITHUB_ENABLED=false
+NEXT_PUBLIC_AUTH_GOOGLE_ONE_TAP_ENABLED=false
+
+# 网站URL配置
+NEXT_PUBLIC_WEB_URL=http://localhost:3000

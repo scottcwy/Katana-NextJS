@@ -28,6 +28,7 @@ import { Header as HeaderType } from "@/types/blocks/header";
 import Icon from "@/components/icon";
 import Link from "next/link";
 import LocaleToggle from "@/components/locale/toggle";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Menu } from "lucide-react";
 import SignToggle from "@/components/sign/toggle";
 import { cn } from "@/lib/utils";
@@ -193,6 +194,7 @@ export default function Header({ header }: { header: HeaderType }) {
             </div>
             <div className="shrink-0 flex gap-3 items-center">
               {header.show_locale && <LocaleToggle />}
+              <ThemeToggle />
               {header.buttons?.map((item, i) => {
                 return (
                   <motion.div 

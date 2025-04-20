@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic';
 const ParticlesBackground = dynamic(() =>
   import('@/components/blocks/hero/particles-background'), {
   ssr: false,
-  loading: () => <div className="absolute inset-0 bg-[#13081e]"></div>
+  loading: () => <div className="absolute inset-0 bg-background"></div>
 });
 
 export const SharedBackground = () => {
@@ -21,7 +21,7 @@ export const SharedBackground = () => {
     <div className="fixed inset-0 -z-10">
       {/* 主要背景颜色和渐变 */}
       <div 
-        className="absolute inset-0 bg-[#13081e] opacity-90 animate-gradient-x"
+        className="absolute inset-0 bg-background opacity-90 animate-gradient-x"
         style={{
           backgroundImage: `radial-gradient(circle at 50% 40%, rgba(112, 50, 176, 0.15) 0%, rgba(0, 0, 0, 0) 70%), 
                          radial-gradient(circle at 70% 60%, rgba(220, 31, 255, 0.1) 0%, rgba(0, 0, 0, 0) 60%)`
@@ -60,7 +60,7 @@ export const SharedBackground = () => {
 
           /* 确保背景色应用到整个页面 */
           body {
-            background-color: #13081e;
+            background-color: var(--background);
           }
         `}</style>
       )}
