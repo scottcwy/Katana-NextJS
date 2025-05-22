@@ -19,7 +19,8 @@ export default async function DefaultLayout({
 
   return (
     <>
-      <SharedBackground />
+      {/* 注释掉SharedBackground以允许自定义背景图片显示 */}
+      {/* <SharedBackground /> */}
       {page.header && <Header header={page.header} />}
       <main className="relative overflow-x-hidden">{children}</main>
       {page.footer && <Footer footer={page.footer} />}

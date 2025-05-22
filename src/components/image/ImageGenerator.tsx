@@ -162,36 +162,41 @@ export function ImageGenerator() {
     <section 
       className="py-16 md:py-24 relative z-10 overflow-hidden"
       id="generator-section"
+      ref={inputRef}
     >
+      {/* 添加背景图片 */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <Image 
+          src="/images/generator-background.jpg" 
+          alt="Generator Background" 
+          fill 
+          priority
+          className="object-cover object-center" 
+        />
+        {/* 半透明遮罩层 */}
+        <div className="absolute inset-0 bg-black/30"></div>
+      </div>
       {/* 浅色模式下的背景效果 */}
-      <div className="hidden dark:hidden bg-dots-light absolute inset-0 opacity-30 pointer-events-none"></div>
-      <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-transparent to-white/50 dark:from-transparent dark:to-transparent pointer-events-none"></div>
+      {/* 移除额外的背景层，让原始背景图片更清晰 */}
       
-      {/* 背景装饰元素 */}
-      <div className="absolute hidden dark:hidden -top-64 -right-64 w-[500px] h-[500px] bg-purple-100/40 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-0 -left-32 w-[300px] h-[300px] bg-pink-100/30 rounded-full blur-3xl pointer-events-none"></div>
-      
-      {/* 暗色模式下的背景效果 */}
-      <div className="hidden dark:block absolute top-0 left-0 w-full h-full bg-gradient-to-b from-gray-900/0 to-gray-900/40 pointer-events-none"></div>
-      
-      <div className="max-w-6xl mx-auto space-y-16 px-4 sm:px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-20">
         {/* 标题区域 */}
         
         <motion.div
-          className="flex flex-col space-y-6 items-center justify-center text-center w-full max-w-4xl mx-auto mb-16 overflow-hidden"
+          className="flex flex-col space-y-6 items-center justify-center text-center w-full max-w-4xl mx-auto mb-16 overflow-hidden relative z-30"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           <div className="grid gap-6 md:gap-8">
             {/* 主标题和描述 */}
-            <div className="space-y-4 text-center">
+            <div className="space-y-4 text-center relative z-10">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-[#a855f7] dark:from-pink-400 dark:to-[#a855f7] animate-gradient-x">
+                <span className="text-primary">
                   {t('title')}
                 </span>
               </h1>
-              <p className="text-xl text-gray-300/90 dark:text-gray-300/90 text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-primary max-w-3xl mx-auto leading-relaxed">
                 {t('description')}
               </p>
             </div>
@@ -202,7 +207,7 @@ export function ImageGenerator() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="space-y-8 bg-gradient-to-b from-background/50 to-background/30 backdrop-blur-xl p-8 md:p-10 rounded-2xl border border-primary/30 shadow-lg relative overflow-hidden"
+          className="space-y-8 bg-gradient-to-b from-background/20 to-background/10 backdrop-blur-sm p-8 md:p-10 rounded-2xl border border-primary/30 shadow-lg relative overflow-hidden z-30"
         >
           {/* 顶部装饰 */}
           <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-primary to-primary/80 opacity-70"></div>
@@ -211,8 +216,8 @@ export function ImageGenerator() {
           <div className="space-y-5">
             <div className="space-y-3">
               <div className="flex items-center justify-between">
-                <label htmlFor="prompt-input" className="text-lg font-medium text-white/90 flex items-center gap-2">
-                  <RiLightbulbFlashLine className="text-xl text-primary/80" />
+                <label htmlFor="prompt-input" className="text-lg font-medium text-primary flex items-center gap-2">
+                  <RiLightbulbFlashLine className="text-xl text-primary" />
                   {t('input.label') || "Describe your dream image"}
                 </label>
                 <TooltipProvider>
@@ -253,8 +258,8 @@ export function ImageGenerator() {
             
             {/* 样例提示词 */}
             <div className="space-y-3">
-              <p className="text-sm text-primary/90 flex items-center gap-1.5 font-medium">
-                <RiStarFill className="text-yellow-400" />
+              <p className="text-sm text-primary flex items-center gap-1.5 font-medium">
+                <RiStarFill className="text-primary" />
                 {t('prompts.suggestions') || "Try these inspiring examples:"}
               </p>
               <div className="flex flex-wrap gap-3">
@@ -264,7 +269,7 @@ export function ImageGenerator() {
                     variant="outline"
                     size="sm"
                     onClick={() => handleUseSamplePrompt(sample)}
-                    className="bg-primary/10 border-primary/20 hover:border-primary/40 hover:bg-primary/20 text-white py-2 px-4 rounded-lg text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow"
+                    className="bg-primary/10 border-primary/20 hover:border-primary/40 hover:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow"
                   >
                     {sample}
                   </Button>
@@ -276,7 +281,7 @@ export function ImageGenerator() {
           <Button
             onClick={handleGenerate}
             disabled={!prompt || loading}
-            className="relative group overflow-hidden w-full h-16 text-lg font-semibold bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white rounded-xl shadow-lg hover:shadow-xl hover:shadow-primary/20 hover:scale-[1.01] transition-all duration-300"
+            className="relative group overflow-hidden w-full h-16 text-lg font-semibold bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl shadow-lg hover:shadow-xl hover:shadow-primary/20 hover:scale-[1.01] transition-all duration-300"
           >
             {loading ? (
               <div className="flex items-center space-x-3">
@@ -302,19 +307,19 @@ export function ImageGenerator() {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="max-w-3xl mx-auto mt-12"
+              className="max-w-3xl mx-auto mt-12 relative z-30"
             >
-              <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-2xl shadow-primary/10 bg-gradient-to-b from-background to-background/80">
-                <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-accent/10 mix-blend-overlay pointer-events-none z-10"></div>
+              <div className="relative overflow-hidden rounded-2xl border border-primary/30 shadow-2xl shadow-primary/10 bg-transparent">
+                {/* 移除额外的渐变层 */}
                 <img 
                   src={imageUrl} 
                   alt={prompt} 
                   className="w-full aspect-square object-cover"
                 />
                 <div className="absolute bottom-0 inset-x-0 p-6 backdrop-blur-sm bg-gradient-to-t from-background/90 via-background/60 to-transparent">
-                  <div className="text-white space-y-3">
+                  <div className="text-primary space-y-3">
                     <h3 className="text-xl font-bold">{t('result.title')}</h3>
-                    <p className="text-gray-300/90 line-clamp-2">{prompt}</p>
+                    <p className="text-primary/90 line-clamp-2">{prompt}</p>
                     <div className="flex gap-3 pt-2">
                       <Button
                         onClick={() => {
@@ -326,7 +331,7 @@ export function ImageGenerator() {
                           link.click();
                           document.body.removeChild(link);
                         }}
-                        className="bg-gradient-to-r from-primary/80 to-accent/80 hover:from-primary hover:to-accent text-white border-0 flex-1"
+                        className="bg-primary hover:bg-primary/90 text-primary-foreground border-0 flex-1"
                       >
                         <RiDownload2Line className="mr-2" />
                         {t('button.download')}
@@ -340,7 +345,7 @@ export function ImageGenerator() {
         </AnimatePresence>
         
         {/* 展示区域和生成的图片库 */}
-        <div ref={galleryDivRef} id="generated-images">
+        <div ref={galleryDivRef} id="generated-images" className="relative z-30">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

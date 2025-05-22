@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "@/components/ui/motion";
 import { useEffect, useState } from "react";
 import { AnnouncementBar } from "./announcement-bar";
+import Image from "next/image";
 
 const Hero = () => {
   const t = useTranslations('hero');
@@ -97,8 +98,20 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 py-24 md:py-32">
+      {/* 背景图片 */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <Image 
+          src="/images/my-background.jpg" 
+          alt="Background" 
+          fill 
+          priority
+          className="object-cover object-center" 
+        />
+        {/* 可以添加一个半透明的遮罩层，使文字更易读 */}
+        <div className="absolute inset-0 bg-black/50"></div>
+      </div>
       {/* 公告内容 */}
-      <div className="mb-12">
+      <div className="mb-12 relative z-10">
         <AnnouncementBar 
           label={t('announcement.label')}
           title={t('announcement.title')}
@@ -110,12 +123,12 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.3 }}
-        className="text-center max-w-6xl"
+        className="text-center max-w-6xl relative z-10"
       >
         <h1 className="text-center font-bold tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
-          <span className="text-white block">{t('create')} </span>
+          <span className="text-primary block">{t('create')} </span>
           <span className="relative inline-block">
-            <span className="bg-gradient-to-r from-primary via-accent to-primary text-transparent bg-clip-text animate-gradient-x">
+            <span className="text-primary">
               {t('highlight_text')}
             </span>
           </span>
@@ -127,15 +140,15 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.5 }}
-        className="mt-10 max-w-3xl text-center"
+        className="mt-10 max-w-3xl text-center relative z-10"
       >
-        <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-2xl text-primary leading-relaxed">
           {t('description')}
         </p>
-        <p className="mt-4 text-lg sm:text-xl text-muted-foreground">
+        <p className="mt-4 text-lg sm:text-xl text-primary">
           {t('description2')}
         </p>
-        <p className="mt-4 text-lg sm:text-xl text-muted-foreground">
+        <p className="mt-4 text-lg sm:text-xl text-primary">
           {t('description3')}
         </p>
       </motion.div>
@@ -145,12 +158,12 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.6 }}
-        className="mt-12 flex flex-col sm:flex-row gap-5"
+        className="mt-12 flex flex-col sm:flex-row gap-5 relative z-10"
       >
         <Button 
           onClick={() => handleButtonClick("#try-it-now")}
           size="lg"
-          className="h-14 px-10 text-lg bg-primary hover:bg-primary/90 text-white hover:text-white hover:scale-105 transition-all duration-300 rounded-full shadow-lg shadow-primary/30"
+          className="h-14 px-10 text-lg bg-primary hover:bg-primary/90 text-primary-foreground hover:text-primary-foreground hover:scale-105 transition-all duration-300 rounded-full shadow-lg shadow-primary/30"
         >
           <span className="relative flex items-center gap-1.5">
             {t('buttons.create')}
@@ -161,7 +174,7 @@ const Hero = () => {
           onClick={() => handleButtonClick("#gallery")}
           variant="outline" 
           size="lg"
-          className="h-14 px-10 text-lg border-white/20 bg-white/5 hover:bg-white/10 hover:scale-105 transition-all duration-300 rounded-full shadow-lg shadow-primary/5 hover:shadow-primary/20"
+          className="h-14 px-10 text-lg border-primary/20 bg-primary/5 hover:bg-primary/10 hover:scale-105 transition-all duration-300 rounded-full shadow-lg shadow-primary/5 hover:shadow-primary/20"
         >
           <span className="flex items-center gap-1.5">
             {t('buttons.gallery')}
@@ -175,12 +188,12 @@ const Hero = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 0.7, y: 0 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="mt-20 text-xs text-muted-foreground absolute bottom-6 left-0 right-0 text-center"
+        className="mt-20 text-xs text-primary absolute bottom-6 left-0 right-0 text-center z-10"
       >
         <div className="flex items-center justify-center">
           <div className="flex h-6 items-center gap-1.5">
             <span className="text-sm">🚀</span>
-            <p className="text-sm text-muted-foreground">{t('powered_by')}</p>
+            <p className="text-sm text-primary">{t('powered_by')}</p>
           </div>
         </div>
       </motion.div>
