@@ -191,7 +191,11 @@
   "blog": {
     "title": "博客",
     "description": "关于 Flux图像生成器 的新闻、资源和更新",
-    "read_more_text": "阅读更多"
+    "read_more_text": "阅读更多",
+    "empty": {
+      "title": "暂无文章",
+      "description": "敬请期待！我们正在为您创作有价值的内容。"
+    }
   },
   "footer": {
     "powered_by": "基于 Katana-NextJS",
