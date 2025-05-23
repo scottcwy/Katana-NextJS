@@ -20,7 +20,7 @@ export default function Blog({ blog }: { blog: BlogType }) {
           <div className="space-y-6 py-16 md:py-24">
             <FadeIn>
               <h1 className="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight text-center">
-                <span className="bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0] dark:from-purple-400 dark:via-pink-400 dark:to-purple-400 text-transparent bg-clip-text animate-gradient-x">
+                <span className="bg-gradient-to-r from-primary to-accent dark:from-primary-foreground dark:to-accent-foreground text-transparent bg-clip-text animate-gradient-x">
                   {blog.title}
                 </span>
               </h1>
