@@ -87,7 +87,7 @@ export default function Header({ header }: { header: HeaderType }) {
                   />
                 )}
                 {header.brand?.title && (
-                  <span className="text-xl font-bold text-white">
+                  <span className="text-xl font-bold text-foreground dark:text-white">
                     {header.brand?.title || ""}
                   </span>
                 )}
@@ -152,7 +152,7 @@ export default function Header({ header }: { header: HeaderType }) {
                           {(item.title === "Blog" || item.title === "博客") ? (
                             <Button
                               variant="ghost"
-                              className="text-white/90 hover:text-white hover:bg-primary"
+                              className="text-foreground dark:text-white/90 hover:text-primary-foreground hover:bg-foreground dark:hover:bg-primary"
                               asChild
                             >
                               <Link href={item.url || "#"}>
@@ -250,7 +250,7 @@ export default function Header({ header }: { header: HeaderType }) {
                             />
                           )}
                           {header.brand?.title && (
-                            <span className="text-xl font-bold text-white">
+                            <span className="text-xl font-bold text-foreground dark:text-white">
                               {header.brand?.title || ""}
                             </span>
                           )}
@@ -378,7 +378,7 @@ export default function Header({ header }: { header: HeaderType }) {
                   />
                 )}
                 {header.brand?.title && (
-                  <span className="text-xl font-bold text-white">
+                  <span className="text-xl font-bold text-foreground dark:text-white">
                     {header.brand?.title || ""}
                   </span>
                 )}

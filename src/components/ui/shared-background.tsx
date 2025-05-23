@@ -23,8 +23,8 @@ export const SharedBackground = () => {
       <div 
         className="absolute inset-0 bg-background opacity-90 animate-gradient-x"
         style={{
-          backgroundImage: `radial-gradient(circle at 50% 40%, rgba(112, 50, 176, 0.15) 0%, rgba(0, 0, 0, 0) 70%), 
-                         radial-gradient(circle at 70% 60%, rgba(220, 31, 255, 0.1) 0%, rgba(0, 0, 0, 0) 60%)`
+          backgroundImage: `radial-gradient(circle at 50% 40%, rgba(112, 50, 176, 0.15) 0%, rgba(var(--muted), 0) 70%), 
+                         radial-gradient(circle at 70% 60%, rgba(220, 31, 255, 0.1) 0%, rgba(var(--muted), 0) 60%)`
         }}
       />
       

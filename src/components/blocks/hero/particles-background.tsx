@@ -91,7 +91,7 @@ export default function ParticlesBackground() {
             particle.x, particle.y, particle.size * 2
           );
           gradient.addColorStop(0, particle.color.replace('0.4', '0.8'));
-          gradient.addColorStop(1, 'rgba(0,0,0,0)');
+          gradient.addColorStop(1, 'rgba(var(--muted), 0)');
           ctx.fillStyle = gradient;
         } else {
           ctx.fillStyle = particle.color.replace('0.4', particle.alpha.toString());
