@@ -67,7 +67,7 @@ export default function Header({ header }: { header: HeaderType }) {
       className={cn(
         "fixed top-0 left-0 right-0 w-full z-50 py-4 transition-all duration-300 backdrop-blur-sm",
         scrolled 
-          ? "bg-black/60 shadow-[0_5px_30px_rgba(0,0,0,0.30)] backdrop-blur-md"
+          ? "bg-background/60 shadow-lg shadow-primary/20 backdrop-blur-md"
           : "bg-transparent"
       )}
     >

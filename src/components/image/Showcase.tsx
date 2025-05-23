@@ -65,7 +65,7 @@ export const Showcase = ({ onViewGallery }: ShowcaseProps) => {
         transition={{ duration: 0.5 }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-3 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">{t('showcase.title')}</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">{t('showcase.title')}</h2>
         <p className="text-muted-foreground max-w-2xl mx-auto text-lg">{t('showcase.description')}</p>
       </motion.div>
 

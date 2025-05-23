@@ -16,11 +16,11 @@ export function AnnouncementBar({ label, title }: AnnouncementProps) {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="inline-flex items-center rounded-full border border-purple-400/20 bg-black/30 backdrop-blur-lg py-2 px-4 gap-2 shadow-[0_0_20px_rgba(168,85,247,0.15)]"
+      className="inline-flex items-center rounded-full border border-primary/30 bg-background/30 backdrop-blur-lg py-2 px-4 gap-2 shadow-lg shadow-primary/20"
     >
       <div className="flex items-center">
         {label && (
-          <div className="px-3 py-1 rounded-full bg-purple-900/80 text-purple-100 text-xs font-semibold">
+          <div className="px-3 py-1 rounded-full bg-primary/20 text-primary text-xs font-semibold">
             {label}
           </div>
         )}

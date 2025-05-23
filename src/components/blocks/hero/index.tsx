@@ -163,7 +163,7 @@ const Hero = () => {
         <Button 
           onClick={() => handleButtonClick("#try-it-now")}
           size="lg"
-          className="h-14 px-10 text-lg bg-primary hover:bg-primary/90 text-primary-foreground hover:text-primary-foreground hover:scale-105 transition-all duration-300 rounded-full shadow-lg shadow-primary/30"
+          className="h-14 px-10 text-lg bg-primary hover:bg-primary/90 text-primary-foreground hover:text-primary-foreground hover:scale-105 transition-all duration-300 rounded-full shadow-lg shadow-primary/30 relative after:absolute after:inset-0 after:-z-10 after:bg-primary/40 after:blur-xl after:rounded-full after:opacity-70 hover:after:opacity-100 after:transition-all"
         >
           <span className="relative flex items-center gap-1.5">
             {t('buttons.create')}
@@ -174,7 +174,7 @@ const Hero = () => {
           onClick={() => handleButtonClick("#gallery")}
           variant="outline" 
           size="lg"
-          className="h-14 px-10 text-lg border-primary/20 bg-primary/5 hover:bg-primary/10 hover:scale-105 transition-all duration-300 rounded-full shadow-lg shadow-primary/5 hover:shadow-primary/20"
+          className="h-14 px-10 text-lg bg-primary-foreground text-primary hover:bg-primary-foreground/90 hover:scale-105 transition-all duration-300 rounded-full shadow-lg shadow-primary/30 border-0 relative after:absolute after:inset-0 after:-z-10 after:bg-primary-foreground/40 after:blur-xl after:rounded-full after:opacity-70 hover:after:opacity-100 after:transition-all dark:bg-primary-foreground dark:text-primary"
         >
           <span className="flex items-center gap-1.5">
             {t('buttons.gallery')}

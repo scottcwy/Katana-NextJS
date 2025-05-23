@@ -9,9 +9,9 @@ export default function Footer({ footer }: { footer: FooterType }) {
   }
 
   return (
-    <section id={footer.name} className="py-6 bg-neutral-900">
+    <section id={footer.name} className="py-6 bg-muted dark:bg-background/80 backdrop-blur-md border-t border-border shadow-md">
       <div className="max-w-7xl mx-auto px-8">
-        <footer className="text-neutral-300">
+        <footer className="text-primary">
           <div className="flex flex-col items-center justify-center gap-4 text-center">
             <div className="flex w-full flex-col items-center justify-center gap-3">
               {footer.brand && (
@@ -25,12 +25,12 @@ export default function Footer({ footer }: { footer: FooterType }) {
                       />
                     )}
                     {footer.brand.title && (
-                      <p className="text-2xl font-semibold text-white">
+                      <p className="text-2xl font-semibold text-foreground">
                         {footer.brand.title}
                       </p>
                     )}
                   </div>
-                  <p className="mt-3 text-sm text-neutral-400">
+                  <p className="mt-3 text-sm text-muted-foreground">
                     {t('description')}
                   </p>
                 </div>
@@ -38,7 +38,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
             </div>
           </div>
           
-          <div className="mt-5 border-t border-neutral-700 pt-4 text-center text-xs text-neutral-500">
+          <div className="mt-5 border-t border-border pt-4 text-center text-xs text-muted-foreground">
             <p>{t('copyright')}</p>
           </div>
         </footer>
