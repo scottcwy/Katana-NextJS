@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import { RiMagicFill, RiGalleryFill, RiArrowDownLine, RiLightbulbFlashLine, RiStarFill, RiDownload2Line, RiSparklingFill, RiArrowRightLine } from 'react-icons/ri';
 import { ImSpinner8 } from 'react-icons/im';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -164,20 +163,6 @@ export function ImageGenerator() {
       id="generator-section"
       ref={inputRef}
     >
-      {/* 添加背景图片 */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <Image 
-          src="/images/generator-background.jpg" 
-          alt="Generator Background" 
-          fill 
-          priority
-          className="object-cover object-center" 
-        />
-        {/* 半透明遮罩层 */}
-        <div className="absolute inset-0 bg-black/30"></div>
-      </div>
-      {/* 浅色模式下的背景效果 */}
-      {/* 移除额外的背景层，让原始背景图片更清晰 */}
       
       <div className="container mx-auto px-4 sm:px-6 relative z-20">
         {/* 标题区域 */}
@@ -191,12 +176,12 @@ export function ImageGenerator() {
           <div className="grid gap-6 md:gap-8">
             {/* 主标题和描述 */}
             <div className="space-y-4 text-center relative z-10">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-                <span className="text-primary">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-shadow-lg">
+                <span className="text-white">
                   {t('title')}
                 </span>
               </h1>
-              <p className="text-xl text-primary max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed text-shadow">
                 {t('description')}
               </p>
             </div>

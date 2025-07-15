@@ -369,7 +369,7 @@ export default function Header({ header }: { header: HeaderType }) {
                 </SheetContent>
               </Sheet>
 
-              <a href={header.brand?.url || ""} className="flex items-center gap-2">
+              <Link href={header.brand?.url || ""} className="flex items-center gap-2">
                 {header.brand?.logo?.src && (
                   <img
                     src={header.brand.logo.src}
@@ -382,7 +382,7 @@ export default function Header({ header }: { header: HeaderType }) {
                     {header.brand?.title || ""}
                   </span>
                 )}
-              </a>
+              </Link>
             </div>
 
             <div className="flex items-center gap-2">

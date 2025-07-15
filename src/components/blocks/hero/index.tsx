@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { motion } from "@/components/ui/motion";
 import { useEffect, useState } from "react";
 import { AnnouncementBar } from "./announcement-bar";
-import Image from "next/image";
 
 const Hero = () => {
   const t = useTranslations('hero');
@@ -98,18 +97,6 @@ const Hero = () => {
 
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6 py-24 md:py-32">
-      {/* 背景图片 */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <Image 
-          src="/images/my-background.jpg" 
-          alt="Background" 
-          fill 
-          priority
-          className="object-cover object-center" 
-        />
-        {/* 可以添加一个半透明的遮罩层，使文字更易读 */}
-        <div className="absolute inset-0 bg-black/50"></div>
-      </div>
       {/* 公告内容 */}
       <div className="mb-12 relative z-10">
         <AnnouncementBar 
@@ -125,10 +112,10 @@ const Hero = () => {
         transition={{ duration: 0.7, delay: 0.3 }}
         className="text-center max-w-6xl relative z-10"
       >
-        <h1 className="text-center font-bold tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
-          <span className="text-primary block">{t('create')} </span>
+        <h1 className="text-center font-bold tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-shadow-lg">
+          <span className="text-white block">{t('create')} </span>
           <span className="relative inline-block">
-            <span className="text-primary">
+            <span className="text-white">
               {t('highlight_text')}
             </span>
           </span>
@@ -142,13 +129,13 @@ const Hero = () => {
         transition={{ duration: 0.7, delay: 0.5 }}
         className="mt-10 max-w-3xl text-center relative z-10"
       >
-        <p className="text-lg sm:text-xl md:text-2xl text-primary leading-relaxed">
+        <p className="text-lg sm:text-xl md:text-2xl text-white leading-relaxed text-shadow">
           {t('description')}
         </p>
-        <p className="mt-4 text-lg sm:text-xl text-primary">
+        <p className="mt-4 text-lg sm:text-xl text-white text-shadow">
           {t('description2')}
         </p>
-        <p className="mt-4 text-lg sm:text-xl text-primary">
+        <p className="mt-4 text-lg sm:text-xl text-white text-shadow">
           {t('description3')}
         </p>
       </motion.div>
@@ -193,7 +180,7 @@ const Hero = () => {
         <div className="flex items-center justify-center">
           <div className="flex h-6 items-center gap-1.5">
             <span className="text-sm">🚀</span>
-            <p className="text-sm text-primary">{t('powered_by')}</p>
+            <p className="text-sm text-white text-shadow">{t('powered_by')}</p>
           </div>
         </div>
       </motion.div>
