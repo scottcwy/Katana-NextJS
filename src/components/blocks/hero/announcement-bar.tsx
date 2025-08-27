@@ -29,8 +29,6 @@ export function AnnouncementBar({ label, title }: AnnouncementProps) {
           <Star className="h-3 w-3 text-yellow-300 fill-yellow-300" />
           <Star className="h-3 w-3 text-yellow-300 fill-yellow-300" />
           <Star className="h-3 w-3 text-yellow-300 fill-yellow-300" />
-          <span className="mx-1"></span>
-          <Star className="h-3 w-3 text-gray-400" />
         </div>
         
         <span className="text-white font-medium text-sm whitespace-nowrap">
