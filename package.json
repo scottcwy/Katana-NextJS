@@ -5,11 +5,11 @@
   "author": "scottcwy",
   "homepage": "https://www.flux.xz.cn",
   "scripts": {
-    "dev": "NODE_NO_WARNINGS=1 next dev",
+    "dev": "cross-env NODE_NO_WARNINGS=1 next dev",
     "build": "next build",
-    "start": "NODE_NO_WARNINGS=1 next start",
+    "start": "cross-env NODE_NO_WARNINGS=1 next start",
     "lint": "next lint",
-    "analyze": "ANALYZE=true pnpm build",
+    "analyze": "cross-env ANALYZE=true pnpm build",
     "cf:build": "npx @cloudflare/next-on-pages",
     "cf:preview": "pnpm cf:build && wrangler pages dev",
     "cf:deploy": "pnpm cf:build && wrangler pages deploy"
@@ -92,6 +92,7 @@
     "@types/react-copy-to-clipboard": "^5.0.7",
     "@types/react-dom": "^18",
     "@types/uuid": "^10.0.0",
+    "cross-env": "^7.0.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
