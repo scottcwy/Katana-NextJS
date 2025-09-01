@@ -1,4 +1,4 @@
-# 🚀 Katana-NextJS
+# ⚡ Flux Generator
 
 <div align="center">
 
@@ -6,138 +6,81 @@
 
 </div>
 
-✨ Nextjs Pages in a Swoosh! A modern Next.js framework that lets you build beautiful single-page applications in just 5 minutes.
+✨ A clean and modern AI image generator built with Next.js, Tailwind CSS, and shadcn/ui. Generate stunning images with simple prompts.
 
-## 🌟 Framework Preview
+## 🌟 Preview
 
 <div align="center">
   <div>
-    <img src="preview.png" alt="Main Interface" width="600px" />
+    <img src="preview.png" alt="Flux Generator Interface" width="600px" />
     <br />
-    <em>🏠 Main Interface Design</em>
-  </div>
-  <br />
-  <div>
-    <img src="preview-generator.png" alt="Features" width="600px" />
-    <br />
-    <em>⚙️ Core Features</em>
+    <em>🎨 Clean and Modern Interface</em>
   </div>
 </div>
 
-## 🛠️ Requirements
-
-- Node.js 20.x or higher
-- Next.js 14.2.9
-- pnpm (recommended) or npm
-
 ## 🚀 Quick Start
 
-1. Clone the repository
-
 ```bash
-git clone https://github.com/scottcwy/Katana-NextJS.git
-```
+# Clone the repository
+git clone https://github.com/scottcwy/AI-Wallpaper.git
 
-2. Install dependencies
-
-```bash
+# Install dependencies
 pnpm install
-```
 
-3. Run the development server
-
-```bash
+# Start development server
 pnpm dev
 ```
 
 ## ✨ Features
 
-- **📝 One-Line Landing Page Generation**: Create complete, professional landing pages with a single prompt
-- **🔥 Advanced Next.js Framework**: Built with cutting-edge technology and supports both Vercel and Cloudflare deployment
-- **📚 Comprehensive Content Platform**: Integrated admin dashboard, blog system with markdown support, and SEO tools
-- **🔐 Authentication System**: Ready-to-use login and user management functionality
-- **💳 Payment Integration**: Pre-configured payment processing with secure checkout flows
-- **🌐 Built-in Internationalization**: Full support for multiple languages with seamless switching between English and Chinese
-- **🎨 Customizable Themes**: Easily modify color schemes and UI elements to match your brand
-- **🖼️ Sample Project: Flux Generator**: Includes AI wallpaper generator as a demonstration of framework capabilities
+- **🎨 AI Image Generation**: Create stunning images with simple text prompts
+- **⚡ Modern UI**: Built with Tailwind CSS and shadcn/ui components
+- **🌐 Internationalization**: Full i18n support with seamless language switching
+- **🚀 One-Click Deploy**: Deploy to Vercel with zero configuration
+- **📱 Responsive Design**: Perfect on desktop, tablet, and mobile devices
+- **🔐 Authentication**: Secure user system with multiple providers
 
-## 🔒 Authentication and Payments
-
-- Configure authentication providers in `.env`
+## ⚙️ Configuration
 
 ```bash
-# Enable GitHub authentication
-NEXT_PUBLIC_AUTH_GITHUB_ENABLED="true"
-```
-
-- Set up payment integration
-
-```bash
-# Configure Stripe keys
-STRIPE_PUBLIC_KEY="your_stripe_public_key"
-STRIPE_PRIVATE_KEY="your_stripe_private_key"
-```
-
-- Access the admin dashboard at `/admin` after setting up authentication
-
-## ⚙️ Customization
-
-- Set your environment variables
-
-```bash
+# Copy environment template
 cp .env.example .env.local
+
+# Configure AI service
+OPENAI_API_KEY="your_openai_api_key"
+
+# Optional: Authentication
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
 ```
 
-- Customize theme
-You can easily create and apply custom themes using the shadcn UI theme generator:
+## 🎯 Usage
 
-1. Visit shadcn UI Theme Generator
-2. Adjust colors, border radius, and fonts until satisfied
-3. Click the "Copy" button in the top right
-4. Paste the generated CSS code into your project's src/app/theme.css file
-5. Save the file and refresh to see the new theme
+1. Enter your image prompt
+2. Click generate and wait for AI magic
+3. Download or share your creation
 
-
-```css
-@layer base {
-  :root {
-    /* basic color */
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    
-    /* main color */
-    --primary: 221.2 83.2% 53.3%;
-    --primary-foreground: 210 40% 98%;
-    
-    /* secondary color */
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-  }
-}
-/* README Style */
-.readme-container {
-  background: var(--card);
-  border: 1px solid hsl(var(--card-border));
-  border-radius: var(--radius);
-  padding: 2rem;
-  box-shadow: var(--card-shadow);
-  margin: 1rem 0;
-}
-```
-- Generate a new landing page with a single prompt
-- In an AI editor (Cursor or Windsurf), ask AI to modify the i18n JSON files based on a specific theme to achieve the effect of changing the landing page with just one sentence
+That's it! Simple and clean.
 
 ## 🚀 Deploy
 
-Deploy your own instance of Katana-NextJS with Vercel:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fscottcwy%2FAI-Wallpaper)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fscottcwy%2FKatana-NextJS)
+One-click deployment to Vercel. No configuration needed.
 
-Just click the button above to deploy, and Vercel will guide you through the setup process. No configuration required!
+## 🛠️ Tech Stack
 
-## ℹ️ About
+- **Next.js 14** - React framework with App Router
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Beautiful and accessible components
+- **i18n** - Internationalization support
+- **Vercel** - Deployment platform
 
-- Version: 0.2.1
-- Author: scottcwy
-- Website: [https://www.flux.xz.cn](https://www.flux.xz.cn)
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) for details.
+
+---
+
+**Simple. Clean. Powerful. 🎨**
 
